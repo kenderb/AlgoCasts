@@ -7,9 +7,7 @@
 
 function maxChar(str) {
   const stgObj = {};
-  str.split('').forEach(char => {
-    stgObj[char] = stgObj[char] + 1 || 1;
-  });
+  str.split('').forEach(char => stgObj[char] = stgObj[char] + 1 || 1 );
   let maxChar = [1, ''];
   for (const char in stgObj) {
     if (stgObj[char] >= maxChar[0]) {
